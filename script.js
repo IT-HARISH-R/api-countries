@@ -6,9 +6,10 @@ function feeddata(d) {
 }
 
 function dispayAll() {
+    const loading = document.getElementById('loading');
+    loading.classList.add('hidden');
     const root = document.getElementById('root');
     root.innerHTML = '';
-    // flags[1];
     datalist.forEach(contry => {
         const cord = root.appendChild(document.createElement("div"));
         const img = cord.appendChild(document.createElement('img'));
